@@ -17,6 +17,12 @@ public class window extends Canvas {
     private JLabel idLabel;
     private JLabel passwordLabel;
 
+    private window() {
+        SQL sql = new SQL();
+        sql.connect("SELECT VERSION()");
+        sql.disconnect();
+    }
+
     public static void main(String[] args) {
         window Window = new window();
         JFrame Frame = new JFrame();
