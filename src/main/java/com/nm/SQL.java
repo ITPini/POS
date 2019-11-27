@@ -2,8 +2,6 @@ package com.nm;
 
 import java.sql.*;
 import java.util.Properties;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class SQL {
 
@@ -11,8 +9,10 @@ public class SQL {
     private static final String USER = "sql7313399";
     private static final String PASS = "Nnr5MNfjPK";
 
-    private Connection connection;
+    private Connection connectivity;
     private Properties properties;
+    private Statement statement;
+    private ResultSet resultSet;
 
     private Properties getProperties() {
         if (properties == null) {
@@ -23,30 +23,40 @@ public class SQL {
         return properties;
     }
 
-    public Connection connect(String _query) {
-        try (Connection con = DriverManager.getConnection(URL, getProperties())) {
-            Statement _st = con.createStatement();
-            ResultSet _rs = _st.executeQuery(_query);
-
-            if (_rs.next()) {
-                System.out.println(_rs.getString(1));
-            }
-
-        } catch (SQLException ex) {
-            Logger _lgr = Logger.getLogger(SQL.class.getName());
-            _lgr.log(Level.SEVERE, ex.getMessage(), ex);
+    public Connection connect() {
+        try {
+            connectivity = DriverManager.getConnection(URL, getProperties());
+            System.out.println("Connected...");
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
-        return connection;
+        return connectivity;
     }
 
     public void disconnect() {
-        if (connection != null) {
+        if (connectivity != null) {
             try {
-                connection.close();
-                connection = null;
+                connectivity.close();
+                connectivity = null;
                 System.out.println("Disconnected...");
             } catch (SQLException e) {
                 e.printStackTrace();
+            }
+        }
+    }
+
+    public void executeQuery(String _query) {
+        if (connectivity != null) {
+            try {
+                statement = connectivity.createStatement();
+                resultSet = statement.executeQuery(_query);
+                while (resultSet.next()) {
+                    System.out.println(resultSet.getString("ID"));
+                }
+            } catch (SQLException e) {
+                e.printStackTrace();
+            } finally {
+                disconnect();
             }
         }
     }

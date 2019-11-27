@@ -2,6 +2,8 @@ package com.nm;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 public class window extends Canvas {
 
@@ -18,9 +20,15 @@ public class window extends Canvas {
     private JLabel passwordLabel;
 
     private window() {
-        SQL sql = new SQL();
-        sql.connect("SELECT VERSION()");
-        sql.disconnect();
+        logInButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                SQL sql = new SQL();
+                sql.connect();
+                sql.executeQuery("SELECT * FROM sql7313399.POSlogin");
+                sql.disconnect();
+            }
+        });
     }
 
     public static void main(String[] args) {
