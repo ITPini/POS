@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d72e552f-c4f8-43e7-8ab5-00a1da213cd1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nm/POSForm.form" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nm/POSForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/nm/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nm/SQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nm/SQL.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nm/window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nm/window.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nm/SQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nm/SQLbuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nm/window.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nm/LoginForm.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nm/window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nm/LoginForm.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,6 +34,24 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="@sql7.freemysqlhosting.net" type="feb32156:DbDataSourceImpl" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@sql7.freemysqlhosting.net" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@sql7.freemysqlhosting.net" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="sql7313399: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@sql7.freemysqlhosting.net" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="sql7313399: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="POSlogin: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
@@ -35,22 +59,38 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="ITPini &lt;43484432+itpini@users.noreply.github.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
   </component>
   <component name="ProjectId" id="1UC7qHntqHwcEyEgszIj4PYCY4v" />
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW" value="true" />
+    <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.WIDTH" value="175" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.JavaFX" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -64,9 +104,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="window" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.nm.window" />
+  <component name="RunManager" selected="Application.main">
+    <configuration name="LoginForm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nm.LoginForm" />
+      <module name="POS" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nm.main" />
       <module name="POS" />
       <extension name="coverage">
         <pattern>
@@ -80,9 +133,30 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.window" />
+        <item itemvalue="Application.main" />
+        <item itemvalue="Application.LoginForm" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@352810e6" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@352810e6" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@3d97087c" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -94,7 +168,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1574848912423</updated>
-      <workItem from="1574848913685" duration="5922000" />
+      <workItem from="1574848913685" duration="7085000" />
+      <workItem from="1575279982096" duration="7887000" />
+      <workItem from="1575292773320" duration="3196000" />
+      <workItem from="1575981239621" duration="6297000" />
+      <workItem from="1576051260538" duration="1425000" />
+      <workItem from="1576055674861" duration="1129000" />
+      <workItem from="1576057271894" duration="91000" />
+      <workItem from="1576057450048" duration="121000" />
+      <workItem from="1576057586061" duration="3493000" />
+      <workItem from="1576065403979" duration="1382000" />
+      <workItem from="1576067134196" duration="265000" />
+      <workItem from="1576067402760" duration="15000" />
+      <workItem from="1576067437444" duration="336000" />
     </task>
     <task id="LOCAL-00001" summary="mySQL implementation">
       <created>1574851443314</created>
@@ -103,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574851443314</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Can now execute queries with executeQuery(&quot;query&quot;);">
+      <created>1574859395499</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1574859395499</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,7 +207,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -122,8 +217,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="mySQL implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="mySQL implementation" />
+    <MESSAGE value="Can now execute queries with executeQuery(&quot;query&quot;);" />
+    <option name="LAST_COMMIT_MESSAGE" value="Can now execute queries with executeQuery(&quot;query&quot;);" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>

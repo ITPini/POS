@@ -1,9 +1,9 @@
 package com.nm;
 
 import java.sql.*;
-import java.util.Properties;
+import java.util.*;
 
-public class SQL {
+public class SQLbuilder {
 
     private static final String URL = "jdbc:mysql://sql7.freemysqlhosting.net:3306";
     private static final String USER = "sql7313399";
@@ -11,8 +11,6 @@ public class SQL {
 
     private Connection connectivity;
     private Properties properties;
-    private Statement statement;
-    private ResultSet resultSet;
 
     private Properties getProperties() {
         if (properties == null) {
@@ -45,19 +43,20 @@ public class SQL {
         }
     }
 
-    public void executeQuery(String _query) {
+    public String executeQuery(String _query) {
+        String queryResult = null;
         if (connectivity != null) {
             try {
-                statement = connectivity.createStatement();
-                resultSet = statement.executeQuery(_query);
+                Statement statement = connectivity.createStatement();
+                ResultSet resultSet = statement.executeQuery(_query);
                 while (resultSet.next()) {
-                    System.out.println(resultSet.getString("ID"));
+                    queryResult = resultSet.getString(1);
                 }
             } catch (SQLException e) {
                 e.printStackTrace();
-            } finally {
-                disconnect();
             }
         }
+        System.out.println(queryResult);
+        return queryResult;
     }
 }

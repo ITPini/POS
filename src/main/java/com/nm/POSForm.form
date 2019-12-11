@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.nm.POSForm">
+  <grid id="27dc6" binding="POSPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="-1" y="-1" width="524" height="196"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="a8e4a" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="a8b3f" binding="cart" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints border-constraint="West"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="23df3" class="javax.swing.JList" binding="cartList">
+                <constraints border-constraint="Center"/>
+                <properties>
+                  <layoutOrientation value="0"/>
+                  <model>
+                    <item value="1"/>
+                    <item value="2"/>
+                    <item value="3"/>
+                    <item value="4"/>
+                  </model>
+                </properties>
+              </component>
+              <component id="e43e1" class="javax.swing.JLabel">
+                <constraints border-constraint="North"/>
+                <properties>
+                  <font style="1"/>
+                  <text value="Indkøbskurv"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <tabbedpane id="10520" binding="menu">
+            <constraints border-constraint="Center"/>
+            <properties>
+              <tabPlacement value="1"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <grid id="dddd1" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <tabbedpane title="Indgang"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="6faec" class="javax.swing.JButton" binding="barnButton">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="100" height="100"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value="Barn"/>
+                    </properties>
+                  </component>
+                  <component id="411f1" class="javax.swing.JButton" binding="voksenButton" default-binding="true">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="1" use-parent-layout="false">
+                        <preferred-size width="100" height="100"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <horizontalAlignment value="0"/>
+                      <horizontalTextPosition value="11"/>
+                      <text value="Voksen"/>
+                      <verticalAlignment value="0"/>
+                    </properties>
+                  </component>
+                  <component id="d09f9" class="javax.swing.JButton" binding="pensionistButton" default-binding="true">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="100" height="100"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value="Pensionist"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="f93ae" layout-manager="GridLayoutManager" row-count="1" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <tabbedpane title="10-turskort"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="814fa" class="javax.swing.JButton" binding="barn10Button" default-binding="true">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="100" height="100"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value="Barn - 10"/>
+                    </properties>
+                  </component>
+                  <component id="c7839" class="javax.swing.JButton" binding="voksen10Button" default-binding="true">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="100" height="100"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value="Voksen - 10"/>
+                    </properties>
+                  </component>
+                  <component id="771a2" class="javax.swing.JButton" binding="pensionist10Button" default-binding="true">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="100" height="100"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <text value="Pensionist - 10"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <grid id="ad081" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints>
+                  <tabbedpane title="Stregkode"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="e3ff" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                        <preferred-size width="300" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties/>
+                  </component>
+                  <vspacer id="f0efc">
+                    <constraints>
+                      <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </vspacer>
+                  <vspacer id="dcb">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                  </vspacer>
+                  <component id="c7e78" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Skan stregkode"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </tabbedpane>
+          <grid id="74f0c" binding="taskBar" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints border-constraint="North"/>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="4e646" class="javax.swing.JLabel" binding="timeLabel">
+                <constraints border-constraint="West"/>
+                <properties>
+                  <text value="Tid"/>
+                </properties>
+              </component>
+              <component id="5fb92" class="javax.swing.JLabel" binding="currentUserLabel">
+                <constraints border-constraint="East"/>
+                <properties>
+                  <text value="Bruger:"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
