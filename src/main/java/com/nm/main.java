@@ -1,6 +1,8 @@
 package com.nm;
 
-public class main {
+class main {
+
+    public static String currentUser;
 
     public static void main(String[] args) {
         LoginForm LoginForm = new LoginForm();

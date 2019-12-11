@@ -3,12 +3,10 @@ package com.nm;
 import java.sql.*;
 import java.util.*;
 
-public class SQLbuilder {
-
+class SQLbuilder {
     private static final String URL = "jdbc:mysql://sql7.freemysqlhosting.net:3306";
     private static final String USER = "sql7313399";
     private static final String PASS = "Nnr5MNfjPK";
-
     private Connection connectivity;
     private Properties properties;
 
@@ -21,14 +19,13 @@ public class SQLbuilder {
         return properties;
     }
 
-    public Connection connect() {
+    public void connect() {
         try {
             connectivity = DriverManager.getConnection(URL, getProperties());
             System.out.println("Connected...");
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return connectivity;
     }
 
     public void disconnect() {
@@ -56,7 +53,6 @@ public class SQLbuilder {
                 e.printStackTrace();
             }
         }
-        System.out.println(queryResult);
         return queryResult;
     }
 }

@@ -27,6 +27,7 @@
                     <item value="3"/>
                     <item value="4"/>
                   </model>
+                  <selectionMode value="0"/>
                 </properties>
               </component>
               <component id="e43e1" class="javax.swing.JLabel">

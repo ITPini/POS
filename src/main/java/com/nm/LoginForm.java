@@ -4,18 +4,18 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class LoginForm {
-    JFrame Frame = new JFrame();
+class LoginForm {
+    private static final int WIDTH = 720;
+    private static final int HEIGHT = 480;
+    private static final String TITLE = "NM - Point of Sale";
+    private final JFrame Frame = new JFrame();
     private JPanel LoginPanel;
     private JTextField idField;
     private JButton logInButton;
     private JPasswordField passwordField;
     private JLabel idLabel;
     private JLabel passwordLabel;
-
-    private static final int WIDTH = 720;
-    private static final int HEIGHT = 480;
-    private static final String TITLE = "NM - Point of Sale";
+    private JLabel credit;
 
     public LoginForm() {
         logInButton.addActionListener(new ActionListener() {
@@ -36,7 +36,7 @@ public class LoginForm {
         Frame.setVisible(true);
     }
 
-    public void exit() {
+    private void exit() {
         Frame.setVisible(false);
     }
 
@@ -52,11 +52,9 @@ public class LoginForm {
 
         try {
             if (idFieldString.equals(idField.getText()) && passwordString.equals(passText)) {
-                SQLbuilder.disconnect();
                 exit();
-
                 POSForm POSForm = new POSForm();
-                POSForm.currentUserLabel.setText(idFieldString);
+                main.currentUser = idFieldString;
                 POSForm.run();
                 SQLbuilder.disconnect();
             }
@@ -65,5 +63,4 @@ public class LoginForm {
             SQLbuilder.disconnect();
         }
     }
-
 }

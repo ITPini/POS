@@ -52,18 +52,13 @@
           <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
       </hspacer>
-      <hspacer id="ef2b6">
-        <constraints>
-          <grid row="2" column="5" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-      </hspacer>
       <component id="f9308" class="javax.swing.JLabel" binding="passwordLabel">
         <constraints>
-          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <font name="Arial" size="20"/>
-          <text value="Password:"/>
+          <text value="Kode:"/>
         </properties>
       </component>
       <component id="ca45d" class="javax.swing.JPasswordField" binding="passwordField">
@@ -81,6 +76,16 @@
           <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
       </hspacer>
+      <component id="3357d" class="javax.swing.JLabel" binding="credit">
+        <constraints>
+          <grid row="3" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="10" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font style="2"/>
+          <foreground color="-9474193"/>
+          <text value="af: Marcelino og Nicolai"/>
+        </properties>
+      </component>
     </children>
   </grid>
 </form>

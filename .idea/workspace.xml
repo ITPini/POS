@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d72e552f-c4f8-43e7-8ab5-00a1da213cd1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nm/POSForm.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nm/POSForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/nm/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+    <list default="true" id="d72e552f-c4f8-43e7-8ab5-00a1da213cd1" name="Default Changelist" comment="Worked on POS form and created a clock&#10;Also changed declaration access to multiple fields">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nm/SQL.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nm/SQLbuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nm/window.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nm/LoginForm.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nm/window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nm/LoginForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nm/LoginForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nm/LoginForm.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nm/LoginForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nm/LoginForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nm/POSForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nm/POSForm.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nm/POSForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nm/POSForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nm/SQLbuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nm/SQLbuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nm/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nm/main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -180,7 +178,8 @@
       <workItem from="1576065403979" duration="1382000" />
       <workItem from="1576067134196" duration="265000" />
       <workItem from="1576067402760" duration="15000" />
-      <workItem from="1576067437444" duration="336000" />
+      <workItem from="1576067437444" duration="1265000" />
+      <workItem from="1576069414348" duration="4054000" />
     </task>
     <task id="LOCAL-00001" summary="mySQL implementation">
       <created>1574851443314</created>
@@ -196,7 +195,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574859395499</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Log-in form finished&#10;POS form under construction">
+      <created>1576068010963</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1576068010963</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,7 +224,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="mySQL implementation" />
     <MESSAGE value="Can now execute queries with executeQuery(&quot;query&quot;);" />
-    <option name="LAST_COMMIT_MESSAGE" value="Can now execute queries with executeQuery(&quot;query&quot;);" />
+    <MESSAGE value="Log-in form finished&#10;POS form under construction" />
+    <option name="LAST_COMMIT_MESSAGE" value="Log-in form finished&#10;POS form under construction" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>

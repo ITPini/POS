@@ -1,11 +1,16 @@
 package com.nm;
 
 import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.Locale;
 
-public class POSForm {
+class POSForm {
+    private static final int WIDTH = 720;
+    private static final int HEIGHT = 720;
+    private static final String TITLE = "NM - Point of Sale";
     private JPanel POSPanel;
     private JTabbedPane menu;
     private JLabel timeLabel;
@@ -19,17 +24,23 @@ public class POSForm {
     private JButton pensionist10Button;
     private JTextField textField1;
     private JPanel cart;
-    public JLabel currentUserLabel;
-
-    private static final int WIDTH = 720;
-    private static final int HEIGHT = 720;
-    private static final String TITLE = "NM - Point of Sale";
+    private JLabel currentUserLabel;
 
     public POSForm() {
+        currentUserLabel.setText("Bruger: " + main.currentUser);
         clock();
+        //DefaultListModel list1 = new DefaultListModel();
+
+        barnButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                //list1.addElement("1 x barn");
+                //cartList(list1);
+            }
+        });
     }
 
-    public void clock() {
+    private void clock() {
         Thread clock = new Thread(() -> {
             try {
                 for (; ; ) {
@@ -37,7 +48,6 @@ public class POSForm {
                     String weekday = today.getDisplayName(Calendar.DAY_OF_WEEK, Calendar.SHORT, Locale.US);
                     int day = today.get(Calendar.DAY_OF_MONTH);
                     int month = today.get(Calendar.MONTH) + 1;
-
                     int hour = today.get(Calendar.HOUR_OF_DAY);
                     int min = today.get(Calendar.MINUTE);
                     int second = today.get(Calendar.SECOND);
