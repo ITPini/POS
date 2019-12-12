@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d72e552f-c4f8-43e7-8ab5-00a1da213cd1" name="Default Changelist" comment="Worked on POS form and created a clock&#10;Also changed declaration access to multiple fields">
+    <list default="true" id="d72e552f-c4f8-43e7-8ab5-00a1da213cd1" name="Default Changelist" comment="Improvements on POS form">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nm/LoginForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nm/LoginForm.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nm/LoginForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nm/LoginForm.java" afterDir="false" />
@@ -179,7 +179,8 @@
       <workItem from="1576067134196" duration="265000" />
       <workItem from="1576067402760" duration="15000" />
       <workItem from="1576067437444" duration="1265000" />
-      <workItem from="1576069414348" duration="4054000" />
+      <workItem from="1576069414348" duration="4757000" />
+      <workItem from="1576098000958" duration="12450000" />
     </task>
     <task id="LOCAL-00001" summary="mySQL implementation">
       <created>1574851443314</created>
@@ -202,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576068010963</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Worked on POS form and created a clock&#10;Also changed declaration access to multiple fields&#10;Reformatted and rearranged the code">
+      <created>1576092867643</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1576092867643</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,7 +233,8 @@
     <MESSAGE value="mySQL implementation" />
     <MESSAGE value="Can now execute queries with executeQuery(&quot;query&quot;);" />
     <MESSAGE value="Log-in form finished&#10;POS form under construction" />
-    <option name="LAST_COMMIT_MESSAGE" value="Log-in form finished&#10;POS form under construction" />
+    <MESSAGE value="Worked on POS form and created a clock&#10;Also changed declaration access to multiple fields&#10;Reformatted and rearranged the code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Worked on POS form and created a clock&#10;Also changed declaration access to multiple fields&#10;Reformatted and rearranged the code" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>

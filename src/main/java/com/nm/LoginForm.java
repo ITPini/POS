@@ -15,7 +15,7 @@ class LoginForm {
     private JPasswordField passwordField;
     private JLabel idLabel;
     private JLabel passwordLabel;
-    private JLabel credit;
+    private JLabel credits;
 
     public LoginForm() {
         logInButton.addActionListener(new ActionListener() {
@@ -26,7 +26,7 @@ class LoginForm {
         });
     }
 
-    public void run() {
+    public void start() {
         Frame.setContentPane(new LoginForm().LoginPanel);
         Frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         Frame.setSize(WIDTH, HEIGHT);
@@ -37,30 +37,29 @@ class LoginForm {
     }
 
     private void exit() {
-        Frame.setVisible(false);
+        Frame.dispose();
     }
 
     private void checkLogin() {
         SQLbuilder SQLbuilder = new SQLbuilder();
-        String idFieldString;
-        String passwordString;
-        String passText = new String(passwordField.getPassword());
-
         SQLbuilder.connect();
-        idFieldString = SQLbuilder.executeQuery("SELECT ID FROM sql7313399.POSlogin WHERE ID='" + idField.getText() + "'");
-        passwordString = SQLbuilder.executeQuery("SELECT Password FROM sql7313399.POSlogin WHERE Password='" + passText + "' AND ID='" + idField.getText() + "'");
+        String passText = new String(passwordField.getPassword());
+        String idFieldString = SQLbuilder.executeQuery("SELECT ID FROM sql7313399.POSlogin WHERE ID='" + idField.getText() + "'");
+        String passwordString = SQLbuilder.executeQuery("SELECT Password FROM sql7313399.POSlogin WHERE Password='" + passText + "' AND ID='" + idField.getText() + "'");
 
-        try {
-            if (idFieldString.equals(idField.getText()) && passwordString.equals(passText)) {
-                exit();
-                POSForm POSForm = new POSForm();
-                main.currentUser = idFieldString;
-                POSForm.run();
+        if (SQLbuilder.connectivity != null) {
+            try {
+                if (idFieldString.equals(idField.getText()) && passwordString.equals(passText)) {
+                    main.currentUser = idFieldString;
+                    main.POSForm.start();
+                    main.loginForm.exit();
+                }
+            } catch (Exception e) {
+                main.currentUser = null;
+                JOptionPane.showMessageDialog(null, "Enten bruger-ID eller kode er forkert", "Forkert log-in", JOptionPane.INFORMATION_MESSAGE);
+            } finally {
                 SQLbuilder.disconnect();
             }
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, "Enten bruger-ID eller kode er forkert", "Forkert log-in", JOptionPane.INFORMATION_MESSAGE);
-            SQLbuilder.disconnect();
         }
     }
 }
