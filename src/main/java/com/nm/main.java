@@ -7,6 +7,6 @@ class main {
     public static String currentUser;
 
     public static void main(String[] args) {
-        POSForm.start();
+        loginForm.start();
     }
 }

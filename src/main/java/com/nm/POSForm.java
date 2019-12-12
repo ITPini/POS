@@ -28,7 +28,7 @@ class POSForm {
     private JLabel amountLabel;
     private JScrollPane cart;
     private JLabel dateLabel;
-    private DefaultListModel<String> list1 = new DefaultListModel<>();
+    private final DefaultListModel<String> list1 = new DefaultListModel<>();
     private float currentPrice;
     private int amount = 1;
 
@@ -36,17 +36,6 @@ class POSForm {
         currentUserButton.setText(main.currentUser);
         clock();
         cart.setPreferredSize(new Dimension(150, 150));
-
-        // Indgang > Barn
-        barnButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                list1.addElement("Indgang - barn");
-                totalLabel.setText((currentPrice = 50 + currentPrice) + " kr");
-                amountLabel.setText((amount++) + " ting i kurven");
-                cartList.setModel(list1);
-            }
-        });
 
         // Log-out
         currentUserButton.addActionListener(new ActionListener() {
@@ -59,13 +48,70 @@ class POSForm {
                 }
             }
         });
+
+        // Indgang > Barn
+        barnButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                cartAdd("Indgang for barn", 50);
+            }
+        });
+
+        // Indgang > Voksen
+        voksenButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                cartAdd("Indgang for voksen", 100);
+            }
+        });
+
+        // Indgang > Penionist
+        pensionistButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                cartAdd("Indgang for penionist", 70);
+            }
+        });
+
+        // 10-turskort > Barn
+        barn10Button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                cartAdd("10-turskort for barn", 450);
+            }
+        });
+
+        // 10-turskort > Voksen
+        voksen10Button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                cartAdd("10-turskort for voksen", 900);
+            }
+        });
+
+        // 10-turskort > Penionist
+        pensionist10Button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                cartAdd("10-turskort for penionist", 630);
+            }
+        });
     }
 
     // TODO: Method for fetching price from database
+
     // TODO: Builder to easily add items in the cart (name + price)
-    // TODO: Method to for 'price and amount' update
+    private void cartAdd(String _item, int _price) {
+        list1.addElement(_item);
+        totalLabel.setText((currentPrice = _price + currentPrice) + " kr");
+        amountLabel.setText((amount++) + " ting i kurven");
+        cartList.setModel(list1);
+    }
+
+    // TODO: Method to 'price and amount' update
     // TODO: Method for deleting items in cart
     // TODO: Method for a tender menu
+    // TODO: Method to match barcode with database
 
     private void clock() {
         Thread clock = new Thread(() -> {

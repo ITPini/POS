@@ -18,6 +18,7 @@
         </constraints>
         <properties>
           <font name="Arial" size="20"/>
+          <text value="admin"/>
         </properties>
       </component>
       <component id="9485e" class="javax.swing.JLabel" binding="idLabel">
@@ -69,6 +70,7 @@
         </constraints>
         <properties>
           <font name="Arial" size="20"/>
+          <text value="admin"/>
         </properties>
       </component>
       <hspacer id="fc253">

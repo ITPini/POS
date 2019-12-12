@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d72e552f-c4f8-43e7-8ab5-00a1da213cd1" name="Default Changelist" comment="Improvements on POS form">
+    <list default="true" id="d72e552f-c4f8-43e7-8ab5-00a1da213cd1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nm/LoginForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nm/LoginForm.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nm/LoginForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nm/LoginForm.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nm/POSForm.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nm/POSForm.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nm/POSForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nm/POSForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nm/SQLbuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nm/SQLbuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nm/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nm/main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -180,7 +178,9 @@
       <workItem from="1576067402760" duration="15000" />
       <workItem from="1576067437444" duration="1265000" />
       <workItem from="1576069414348" duration="4757000" />
-      <workItem from="1576098000958" duration="12450000" />
+      <workItem from="1576098000958" duration="12643000" />
+      <workItem from="1576146260743" duration="688000" />
+      <workItem from="1576155751686" duration="1026000" />
     </task>
     <task id="LOCAL-00001" summary="mySQL implementation">
       <created>1574851443314</created>
@@ -210,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576092867643</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Improvements on POS form">
+      <created>1576112201975</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1576112201975</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,7 +241,8 @@
     <MESSAGE value="Can now execute queries with executeQuery(&quot;query&quot;);" />
     <MESSAGE value="Log-in form finished&#10;POS form under construction" />
     <MESSAGE value="Worked on POS form and created a clock&#10;Also changed declaration access to multiple fields&#10;Reformatted and rearranged the code" />
-    <option name="LAST_COMMIT_MESSAGE" value="Worked on POS form and created a clock&#10;Also changed declaration access to multiple fields&#10;Reformatted and rearranged the code" />
+    <MESSAGE value="Improvements on POS form" />
+    <option name="LAST_COMMIT_MESSAGE" value="Improvements on POS form" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>

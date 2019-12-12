@@ -199,7 +199,8 @@
       <scrollpane id="4d19" binding="cart">
         <constraints border-constraint="Before"/>
         <properties>
-          <verticalScrollBarPolicy value="21"/>
+          <horizontalScrollBarPolicy value="31"/>
+          <verticalScrollBarPolicy value="20"/>
         </properties>
         <border type="bevel-raised"/>
         <children>
